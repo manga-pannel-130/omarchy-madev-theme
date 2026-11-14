@@ -38,8 +38,8 @@ Default values:
 The opacity installer is not run automatically when MaDev is installed. To enable it, run:
 
 ```bash
-```
 bash "$HOME/.config/omarchy/themes/madev-omarchy-theme/scripts/install-opacity.sh"
+```
 
 The installer adds a clearly marked configuration block to `~/.config/hypr/looknfeel.lua`, creates a timestamped backup before modifying the file, and can safely be run again without adding duplicate settings.
 
