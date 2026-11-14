@@ -11,14 +11,38 @@ A custom Omarchy theme created and maintained by Vishal Madhav.
 
 ## Installation
 
-Clone the repository into your Omarchy themes directory:
+MaDev can be installed directly through Omarchy's built-in theme installer. Manual cloning is not required.
+
+1. Open the Omarchy menu using `Super + Alt + Space`.
+2. Navigate to **Install → Style → Theme**.
+3. Paste the repository URL:
+
+   `https://github.com/manga-pannel-130/MaDev-Omarchy-Theme.git`
+
+4. Once installation finishes, select **MaDev** from the theme selector.
+
+Alternatively, install MaDev from the terminal:
 
 ```bash
-git clone https://github.com/manga-pannel-130/MaDev-Omarchy-Theme.git ~/.config/omarchy/themes/madev
+omarchy theme install https://github.com/manga-pannel-130/MaDev-Omarchy-Theme.git
 ```
-
-Select MaDev from Omarchy's theme selector.
 
 ## Updating
 
-Run `git pull` from the theme directory.
+MaDev is installed as a Git repository. To retrieve the latest changes, run:
+
+```bash
+git -C "$HOME/.config/omarchy/themes/madev" pull --ff-only
+```
+
+After updating, reapply MaDev:
+
+```bash
+omarchy theme set madev
+```
+
+To check the installed theme name:
+
+```bash
+omarchy theme list
+```
