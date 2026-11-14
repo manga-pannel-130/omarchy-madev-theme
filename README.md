@@ -1,6 +1,6 @@
 # MaDev Omarchy Theme
 
-A custom Omarchy theme created and maintained by VMAD LABS.
+A custom Omarchy theme created and maintained by Vishal Madhav.
 
 ## Contents
 - Custom color palette
