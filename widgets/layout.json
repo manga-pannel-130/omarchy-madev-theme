@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "base_resolution": {
+    "width": 1280,
+    "height": 720
+  },
+  "widgets": [
+    {
+      "style": "visualizer-bars",
+      "x": 954,
+      "y": 85,
+      "scale": 1.113,
+      "locked": true,
+      "rotation": 0
+    },
+    {
+      "style": "sys-pill-cpu",
+      "x": 1,
+      "y": 45,
+      "scale": 1.0,
+      "locked": true,
+      "rotation": 0
+    },
+    {
+      "style": "sys-pill-ram",
+      "x": 5,
+      "y": 99,
+      "scale": 1.0,
+      "locked": true,
+      "rotation": 0
+    },
+    {
+      "style": "sys-pill-gpu",
+      "x": 2,
+      "y": 153,
+      "scale": 1.0,
+      "locked": true,
+      "rotation": 0
+    },
+    {
+      "style": "music-vinyl",
+      "x": 10,
+      "y": 239,
+      "scale": 1.164,
+      "locked": true,
+      "rotation": 0
+    },
+    {
+      "style": "analog-station",
+      "x": 225,
+      "y": 49,
+      "scale": 0.842,
+      "locked": false,
+      "rotation": 0
+    }
+  ]
+}

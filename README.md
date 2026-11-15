@@ -14,6 +14,7 @@ MaDev is a monochromatic desktop theme built around a clean black, white, and ne
 - Nine desktop wallpapers
 - Custom Fastfetch configuration featuring a Porsche 911 GT3 RS ASCII/SIXEL logo
 - Optional global Hyprland window opacity installer
+- Optional Whimsy desktop widget arrangement with a music player, system monitoring pills, analog clock, and audio visualizer
 
 ## Installation
 
@@ -26,6 +27,7 @@ MaDev can be installed directly using Omarchy's built-in theme installer. You do
 3. Enter the repository URL:
 
    `https://github.com/manga-pannel-130/omarchy-madev-theme.git`
+
 4. Complete the installation.
 5. Select **Madev** from the theme selector.
 
@@ -50,6 +52,32 @@ Omarchy installs this repository under:
 ```text
 ~/.config/omarchy/themes/madev/
 ```
+
+## Desktop Widgets (Optional)
+
+MaDev includes a portable desktop widget arrangement powered by [Whimsy](https://github.com/rover-001/whimsy), an Omarchy plugin built with Quickshell.
+
+The default arrangement includes six widgets:
+
+- **Audio visualizer:** Live audio visualization
+- **CPU monitor:** CPU monitoring pill
+- **RAM monitor:** Memory monitoring pill
+- **GPU monitor:** GPU monitoring pill
+- **Music player:** Vinyl-style music player
+- **Analog clock:** Desktop clock
+
+Whimsy must be installed separately. To install the MaDev widget arrangement, follow the [Desktop Widgets documentation](widgets/README.md).
+
+The widget installer:
+
+- Checks Whimsy installation and widget compatibility.
+- Detects the focused monitor and adapts widget positions to its logical resolution.
+- Generates fresh widget IDs.
+- Backs up an existing Whimsy layout before replacing it.
+
+A restore script is also provided to restore a previous layout.
+
+> **Note:** Widgets are optional and are not automatically installed when installing the MaDev theme. Whimsy is a third-party plugin and is not bundled with MaDev.
 
 ## Updating
 
@@ -188,7 +216,7 @@ To change or remove the opacity settings, edit or remove the MaDev-managed block
 
 ## Repository
 
-**GitHub:** [https://github.com/manga-pannel-130/omarchy-madev-theme](https://github.com/manga-pannel-130/omarchy-madev-theme)
+**GitHub:** [manga-pannel-130/omarchy-madev-theme](https://github.com/manga-pannel-130/omarchy-madev-theme)
 
 Contributions, suggestions, and feedback are welcome.
 
