@@ -1,0 +1,111 @@
+
+
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "sixel",
+    "source": "~/.config/omarchy/themes/madev-omarchy-theme/fastfetch/assets/porsche-911-gt3-rs-centered.png",
+    "width": 32,
+    "position": "left"
+  },
+
+  "display": {
+    "disableLinewrap": true
+  },
+
+  "modules": [
+    "break",
+    "break",
+
+    {
+      "type": "host",
+      "key": " PC",
+      "keyColor": "white"
+    },
+    {
+      "type": "cpu",
+      "key": " CPU",
+      "format": "{name}",
+      "keyColor": "white"
+    },
+    {
+      "type": "command",
+      "key": " GPU",
+      "keyColor": "white",
+      "text": "fastfetch -s gpu --format json | jq -r '.[] | select(.type == \"GPU\") | .result[].name' | sed 's/ \\/ .*//'"
+    },
+    {
+      "type": "display",
+      "key": "󱄄 Display",
+      "format": "{width}x{height} @ {refresh-rate} Hz",
+      "keyColor": "white"
+    },
+    {
+      "type": "disk",
+      "key": "󰋊 Disk",
+      "format": "{size-percentage}",
+      "keyColor": "white"
+    },
+    {
+      "type": "memory",
+      "key": " RAM",
+      "format": "{percentage}",
+      "keyColor": "white"
+    },
+
+    {
+      "type": "command",
+      "key": "󰣇 OS",
+      "keyColor": "white",
+      "text": "version=$(omarchy-version) && echo \"Omarchy $version\""
+    },
+    {
+      "type": "kernel",
+      "key": " Kernel",
+      "keyColor": "white"
+    },
+    {
+      "type": "wm",
+      "key": " WM",
+      "keyColor": "white"
+    },
+    {
+      "type": "terminal",
+      "key": " Terminal",
+      "keyColor": "white"
+    },
+    {
+      "type": "command",
+      "key": "󰸌 Theme",
+      "keyColor": "white",
+      "text": "theme=$(omarchy-theme-current); echo -e \"$theme \\e[38m●\\e[37m●\\e[36m●\\e[35m●\\e[34m●\\e[33m●\\e[32m●\\e[31m●\""
+    },
+    {
+      "type": "terminalfont",
+      "key": " Font",
+      "keyColor": "white"
+    },
+
+    {
+      "type": "command",
+      "key": "󱫐 Uptime",
+      "keyColor": "white",
+      "text": "up=$(cut -d. -f1 /proc/uptime); d=$((up / 86400)); h=$((up % 86400 / 3600)); m=$((up % 3600 / 60)); if [ \"$d\" -gt 0 ]; then omarchy-i18n agents.durationDaysHours \"$d\" \"$h\"; elif [ \"$h\" -gt 0 ]; then omarchy-i18n battery.durationHoursMinutes \"$h\" \"$m\"; else omarchy-i18n battery.durationMinutes \"$m\"; fi"
+    },
+    {
+      "type": "battery",
+      "key": "󰁹 Battery",
+      "keyColor": "white",
+      "format": "{capacity}{?status} [{status}]{?}"
+    },
+    {
+      "type": "command",
+      "key": " Updated",
+      "keyColor": "white",
+      "text": "updated=$(omarchy-version-pkgs); echo \"$updated\" | sed 's/ at .*//'"
+    },
+
+    "break"
+  ]
+}
