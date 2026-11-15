@@ -5,7 +5,7 @@
 
   "logo": {
     "type": "sixel",
-    "source": "~/.config/omarchy/themes/madev-omarchy-theme/fastfetch/assets/porsche-911-gt3-rs-centered.png",
+    "source": "~/.config/omarchy/themes/madev/fastfetch/assets/porsche-911-gt3-rs-centered.png",
     "width": 32,
     "position": "left"
   },
